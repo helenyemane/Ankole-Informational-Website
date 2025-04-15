@@ -1,0 +1,77 @@
+.menu-details {
+    display: flex;
+    gap: 3%;
+    overflow-y: hidden;
+    
+}
+
+.menu-outline {
+    img {
+        margin-top: 10%;
+        height: 200px ;
+    }
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(Images/menu\ outline.jpg);
+    height: 100vh;
+    width: 50%;
+    color: white;
+    background-size: cover;
+    text-align: center;
+
+    
+}
+.menu-writtings{
+    width: 45%;
+}
+
+.titles {
+    margin-top: 15%;
+    
+    h4{
+        font-size: 35px;
+    }
+    p{
+        font-size: 65px;
+        color: orangered;
+    }
+    line-height: 12px;
+   
+}
+.main-options {
+    margin-bottom: 5%;
+    display: flex;
+    align-items: center;
+    gap:20px;
+    margin-left: 25%;
+}
+.breakfast{
+    display: inline;
+    margin-bottom: 50%;
+}
+
+.three-options{
+    display: flex;
+    color: orangered;
+    gap: 6%;
+}
+.prices{
+    display: flex;
+    justify-content: space-between;
+    /* margin-left: 20%; */
+}
+
+
+.other-breakfast{
+display:flex;
+justify-content: space-between;
+width: 100%;
+
+}
+
+.other-details{
+    display: flex;
+    gap: 3%;
+    img{
+        height: 100px;
+    }
+
+}

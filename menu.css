@@ -1,8 +1,15 @@
+@font-face{
+    font-family: poppins;
+    src:url(poppins/Poppins-Regular.ttf)
+}
+
+body{
+    font-family: poppins;
+}
 .menu-details {
     display: flex;
-    gap: 3%;
     overflow-y: hidden;
-    
+    height: 100vh;
 }
 
 .menu-outline {
@@ -19,8 +26,19 @@
 
     
 }
+.food-list{
+    width: 85%;
+    margin: auto;
+}
+.foods{
+    margin-left: 50%;
+}
 .menu-writtings{
-    width: 45%;
+    width: 50%;
+ background-color: black;
+    color: white;
+    overflow-y: scroll;
+    align-items: center;
 }
 
 .titles {
@@ -56,22 +74,43 @@
 .prices{
     display: flex;
     justify-content: space-between;
-    /* margin-left: 20%; */
+    line-height: 0.05;
+    #extra{
+        line-height:1.2 ;
+    }
 }
+    /* margin-left: 20%; */
+
+
 
 
 .other-breakfast{
 display:flex;
 justify-content: space-between;
 width: 100%;
+/* line-height: 3; */
 
 }
 
 .other-details{
     display: flex;
-    gap: 3%;
+    gap: 2%;
     img{
-        height: 100px;
+        height: 80px;
+        width:100px ;
     }
+    width: 80%;
+    align-items: center;
 
+}
+.details{
+    width:95%;
+    
+}
+   .ankole-text{
+    /* line-height: 1; */
+   }
+
+   #salads{
+    color:orangered;
 }

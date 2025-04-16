@@ -1,3 +1,11 @@
+@font-face{
+    font-family: poppins;
+    src:url(poppins/Poppins-Regular.ttf)
+}
+
+body{
+    font-family: poppins;
+}
 .home-page{
     position: relative;
     height: 100vh;
@@ -41,6 +49,13 @@
 .savour {
     animation-delay: 20s;
     background-image: url(https://cdn.prod.website-files.com/65aa1f78e2380ad0548de50d/65cb61d8c46dc657819e1cc2_ankolegrill_slider.jpg);
+}@font-face{
+    font-family: poppins;
+    src:url(poppins/Poppins-Regular.ttf)
+}
+
+body{
+    font-family: poppins;
 }
 
 @keyframes fading {

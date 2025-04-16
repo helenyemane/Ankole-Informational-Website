@@ -1,3 +1,11 @@
+@font-face{
+    font-family: poppins;
+    src:url(poppins/Poppins-Regular.ttf)
+}
+
+body{
+    font-family: poppins;
+}
 .home-page{
     display: flex;
 }

@@ -1,11 +1,55 @@
-@font-face{
+@font-face {
     font-family: poppins;
-    src:url(poppins/Poppins-Regular.ttf)
-}
+    src: url(poppins/Poppins-Regular.ttf)
+  }
+  
+  body {
+    font-family: poppins;
+  }
+  
+  @keyframes fading {
+  
+    0%,
+    100% {
+      opacity: 0;
+    }
+  
+    20%,
+    40% {
+      opacity: 1;
+    }
+  
+    60%,
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  .contact-options {
+    display: flex;
+    border-color: white;
+    font-size: 15px;
+  }
+  
+  #whatsapp {
+    right: 4%;
+    border-radius: 50%;
+    background-color: rgb(22, 20, 20);
+    color: rgb(245, 241, 241);
+    position: fixed;
+    z-index: 5;
+    border: 1px solid rgb(104, 102, 102);
+    font-size: xx-large;
+    bottom: 6%;
+    padding: 0.5% 0.7%;
+  
+    a {
+      text-decoration: none;
+      color: white;
+  
+    }
+  }
 
-body{
-    font-family: poppins;
-}
 .menu-details {
     display: flex;
     overflow-y: hidden;
@@ -46,10 +90,12 @@ body{
     
     h4{
         font-size: 35px;
+        font-weight: lighter;
     }
     p{
-        font-size: 65px;
-        color: orangered;
+        font-size: 63px;
+        color: rgb(209, 77, 29);
+        font-weight: lighter;
     }
     line-height: 12px;
    
@@ -60,16 +106,30 @@ body{
     align-items: center;
     gap:20px;
     margin-left: 25%;
+    p{
+        color: gray;
+    }
 }
 .breakfast{
     display: inline;
     margin-bottom: 50%;
+    color: rgb(206, 200, 200);
+    p{
+        line-height: 0.4;
+    }
+    
+}
+
+.breakfast h2{
+    color: white;
+    font-weight: lighter;
 }
 
 .three-options{
     display: flex;
-    color: orangered;
+    color: rgb(209, 77, 29);
     gap: 6%;
+    font-size: 18px;
 }
 .prices{
     display: flex;
@@ -79,7 +139,7 @@ body{
         line-height:1.2 ;
     }
 }
-    /* margin-left: 20%; */
+
 
 
 
@@ -87,14 +147,15 @@ body{
 .other-breakfast{
 display:flex;
 justify-content: space-between;
-width: 100%;
-/* line-height: 3; */
+width: 110%;
+font-size: 12px;
 
 }
 
 .other-details{
     display: flex;
     gap: 2%;
+    margin-right: -15%;
     img{
         height: 80px;
         width:100px ;
@@ -107,10 +168,231 @@ width: 100%;
     width:95%;
     
 }
-   .ankole-text{
-    /* line-height: 1; */
+   .ankole-text h3{
+    font-weight: lighter;
+    font-size: 17px;
+    
    }
+   .ankole-text p{
+    color:rgb(177, 175, 175);
+    font-size: 15px;
+   }
+    
+   
 
    #salads{
     color:orangered;
+}
+
+nav {
+    position: fixed;
+    display: flex;
+    background-color: black;
+    align-items: center;
+    z-index: 7;
+    bottom: 1%;
+    left: 24%;
+    width: 35%;
+    padding: 0.8% 1.5%;
+    border-radius: 3rem;
+    font-size: medium;
+    justify-content: space-between;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+
+  
+  
+    a {
+      text-decoration: none;
+      color: white;
+    }
+  
+    i {
+      color: gray;
+      font-size: 23px;
+    }
+  
+    a:hover {
+      color: gray;
+    }
+  }
+  
+  .navigation-bar {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .navigation-details {
+    background-color: black;
+    position: absolute;
+    padding: 100% 150%;
+    margin-left: -100%;
+    top: -35vh;
+    width: 20vh;
+    border-radius: 1rem;
+    display: none;
+    z-index: 20;
+  
+  }
+  
+  .navigation-bar:hover .navigation-details {
+    display: block;
+  }
+  
+  .opening-hours {
+    position: relative;
+    display: inline-block;
+    line-height: 1.2;
+  
+    i {
+      font-size: 23px;
+    }
+  
+    h3 {
+      margin-bottom: 6%;
+    }
+  
+    h4 {
+      margin-bottom: -3%;
+      font-weight: bolder;
+    }
+  
+  }
+  
+  .opening-hours-detail {
+    background-color: white;
+    position: absolute;
+    padding: 100% 150%;
+    border-radius: 1rem;
+    margin-left: -100%;
+    color: black;
+    top: -34vh;
+    width: 20vh;
+    display: none;
+  
+  }
+  
+  .opening-hours:hover .opening-hours-detail {
+    color: black;
+    display: block;
+  }
+  
+  
+  #reservation-button {
+    padding-left: 1%;
+    height: 35px;
+    width: 110px;
+    background-color: rgb(90, 88, 88);
+    border-radius: 50px;
+    border: none;
+    font-size: 16px;
+    color: white;
+    padding-top: 1.5%;
+  }
+  
+  #reservation-button:hover {
+    background-color: white;
+    color: black;
+  }
+
+
+@media only screen and (max-width: 430px){
+  .menu-details {
+    flex-direction: column;
+    /* overflow-y: hidden; */
+    height: 100vh;
+}
+
+.menu-outline {
+  img {
+      margin-top: 10%;
+      height: 200px ;
+  }
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(Images/menu\ outline.jpg);
+  height: 100vh;
+  width: 100%;
+  color: white;
+  background-size: cover;
+  text-align: center;
+
+  
+}
+
+.menu-writtings{
+  width: 100%;
+background-color: black;
+  color: white;
+  overflow-y: scroll;
+  align-items: center;
+}
+
+.main-options {
+  margin-bottom: 5%;
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+  margin-left: -4%;
+  font-size: 12px;
+  width:110%;
+  p{
+      color: gray;
+      font-size: 13px;
+  }
+}
+.breakfast{
+  display: inline;
+  margin-bottom: 50%;
+  font-size: 15px;
+  color: rgb(206, 200, 200);
+  p{
+      line-height: 1.2;
+  }
+  
+}
+
+.ankole-text h3{
+  font-weight: lighter;
+  font-size: 15px;
+  
+ }
+.prices{
+  display: flex;
+  justify-content: space-between;
+  line-height: 0.05;
+  font-size: 12px;
+  width: 110%;
+  /* margin-top: 10%; */
+  #extra{
+      line-height:1.2 ;
+  }
+}
+
+#whatsapp {
+  right: 4%;
+  border-radius: 50%;
+  background-color: rgb(22, 20, 20);
+  color: rgb(245, 241, 241);
+  position: fixed;
+  z-index: 5;
+  border: 1px solid rgb(104, 102, 102);
+  font-size: 20px;
+  bottom: 8%;
+  padding: 0.5% 0.7%;
+}
+
+.food-list{
+  width: 85%;
+  margin: auto;
+  margin-bottom: 17%;
+}
+
+.ankole-text h3{
+  font-weight: lighter;
+  font-size: 15px;
+  
+ }
+ .ankole-text p{
+  color:rgb(177, 175, 175);
+  font-size: 12px;
+ }
 }
